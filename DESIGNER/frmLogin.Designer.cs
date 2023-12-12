@@ -38,12 +38,13 @@ namespace DESIGNER
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtClaveAcceso = new System.Windows.Forms.TextBox();
             this.errorLogin = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnAcercade = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(143, 304);
+            this.btnFinalizar.Location = new System.Drawing.Point(143, 284);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(103, 23);
             this.btnFinalizar.TabIndex = 6;
@@ -53,7 +54,7 @@ namespace DESIGNER
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(143, 275);
+            this.btnIniciar.Location = new System.Drawing.Point(143, 255);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(103, 23);
             this.btnIniciar.TabIndex = 5;
@@ -112,11 +113,22 @@ namespace DESIGNER
             // 
             this.errorLogin.ContainerControl = this;
             // 
+            // btnAcercade
+            // 
+            this.btnAcercade.Location = new System.Drawing.Point(158, 313);
+            this.btnAcercade.Name = "btnAcercade";
+            this.btnAcercade.Size = new System.Drawing.Size(75, 23);
+            this.btnAcercade.TabIndex = 7;
+            this.btnAcercade.Text = "Acerca de ";
+            this.btnAcercade.UseVisualStyleBackColor = true;
+            this.btnAcercade.Click += new System.EventHandler(this.btnAcercade_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 340);
+            this.Controls.Add(this.btnAcercade);
             this.Controls.Add(this.txtClaveAcceso);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label3);
@@ -146,5 +158,6 @@ namespace DESIGNER
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtClaveAcceso;
         private System.Windows.Forms.ErrorProvider errorLogin;
+        private System.Windows.Forms.Button btnAcercade;
     }
 }
